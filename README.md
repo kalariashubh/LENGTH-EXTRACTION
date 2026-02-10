@@ -48,13 +48,15 @@ LENGTH_EXTRACTION/
 │   └── measurements.js
 │
 ├── services/            # APS service logic
-│
+│   └── app.js
+|
 ├── data/
 │   └── measurements.json
 │
 ├── .env                 # Environment variables (ignored)
 ├── server.js            # Express server
 └── package.json
+└── package-lock.json
 ```
 
 ---
@@ -125,23 +127,6 @@ The following are ignored via `.gitignore`:
 - `.env`
 - `node_modules`
 - Build folders
+- data/measurements.json
 
-Never expose:
 
-- APS Client Secret  
-- Tokens  
-- API keys  
-
----
-
-## 🎯 Use Cases
-
-This architecture can scale into real construction software such as:
-
-- Beam length detection  
-- Column spacing analysis  
-- Quantity takeoff  
-- Automated measurements  
-- BIM data extraction  
-
----
