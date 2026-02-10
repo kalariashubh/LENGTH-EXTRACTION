@@ -67,7 +67,7 @@ LENGTH_EXTRACTION/
 
 ```bash
 git clone https://github.com/kalariashubh/LENGTH-EXTRACTION.git
-cd LENGTH-EXTRACTION
+cd LENGTH_EXTRACTION
 ```
 
 ---
