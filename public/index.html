@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>APS Measure Viewer</title>
+
+    <link
+        rel="stylesheet"
+        href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.min.css"
+    />
+
+    <style>
+
+        body{
+            margin:0;
+            overflow:hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #viewer{
+            width:100vw;
+            height:100vh;
+        }
+
+        .capture-btn{
+
+            position:absolute;
+            top:20px;
+            left:20px;
+
+            z-index:9999;
+
+            padding:12px 20px;
+
+            background:linear-gradient(135deg,#28a745,#1e7e34);
+            color:white;
+
+            border:none;
+            border-radius:8px;
+
+            font-size:15px;
+            font-weight:600;
+
+            cursor:pointer;
+
+            box-shadow:0 4px 12px rgba(0,0,0,0.25);
+
+            transition:all 0.25s ease;
+        }
+
+        .capture-btn:hover{
+            transform:translateY(-2px);
+            box-shadow:0 8px 18px rgba(0,0,0,0.35);
+        }
+
+        .capture-btn:active{
+            transform:scale(0.97);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <button id="captureBtn" class="capture-btn">
+        Extract Length
+    </button>
+
+    <div id="viewer"></div>
+
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
+
+    <script src="/app.js"></script>
+
+</body>
+</html>
