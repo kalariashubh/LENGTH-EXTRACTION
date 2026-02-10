@@ -112,7 +112,7 @@ http://localhost:3000
 1️⃣ Load the drawing in APS Viewer  
 2️⃣ Select the Measure tool  
 3️⃣ Click two points on the drawing  
-4️⃣ Press **Capture Measurement**  
+4️⃣ Press **Extract Length**  
 5️⃣ Length is:
 
 - Printed in terminal  
