@@ -63,7 +63,7 @@ function () {
                         return;
                     }
 
-                    locked = true; // 🔒
+                    locked = true;
 
                     console.log("✅ Length Extracted:", distance);
 
